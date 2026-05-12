@@ -242,7 +242,6 @@ The repository reproduces the central Electricity-96 PatchTST/64 result within a
 - Yuqi Nie, Nam H. Nguyen, Phanwadee Sinthong, and Jayant Kalagnanam. 2023. *A Time Series Is Worth 64 Words: Long-term Forecasting with Transformers*. ICLR 2023. https://arxiv.org/abs/2211.14730
 - Official PatchTST implementation by the paper authors: https://github.com/yuqinie98/PatchTST
 - Artur Trindade. 2015. *ElectricityLoadDiagrams20112014*. UCI Machine Learning Repository. https://doi.org/10.24432/C58C86
-- Adam Paszke et al. 2019. *PyTorch: An Imperative Style, High-Performance Deep Learning Library*. NeurIPS 2019.
 
 ## 9. Acknowledgements
 
