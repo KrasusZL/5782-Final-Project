@@ -1,66 +1,20 @@
 # Dataset Instructions
 
-The `Electricity` dataset used in this project is not included in this repository because the raw CSV file is too large for normal GitHub storage.
+This project uses the Electricity benchmark CSV used in long-term forecasting experiments.
 
-## Dataset used
-
-This project uses the standard `electricity.csv` dataset used in long-term time-series forecasting benchmarks, including PatchTST/Autoformer-style experiments.
-
-Expected local file path:
-
-```bash
-data/electricity.csv
-```
-
-If your local training script expects another path, for example `./dataset/electricity.csv`, either change the script/configuration to point to `./data/electricity.csv`, or place the downloaded file in the expected directory.
-
-## How to obtain the dataset
-
-1. Download the benchmark datasets from the Autoformer/PatchTST dataset Google Drive:
-
-   https://drive.google.com/drive/folders/1ZOYpTUa82_jCcxIdTmyr0LXQfvaM9vIy
-
-2. Locate the Electricity dataset file, usually named:
-
-```bash
-electricity.csv
-```
-
-3. Place the file in this repository as:
-
-```bash
-data/electricity.csv
-```
-
-After downloading, the repository should look like:
+The notebook expects the local path:
 
 ```text
-5782-Final-Project/
-├── README.md
-├── code/
-├── data/
-│   ├── README.md
-│   └── electricity.csv        # downloaded manually, not committed to GitHub
-├── results/
-├── poster/
-└── report/
+code/dataset/electricity.csv
 ```
 
-## Reproducibility note
-
-The submitted code assumes that the Electricity dataset has been downloaded manually and placed at:
+If `data/electricity.csv.gz` is included, expand it from the repository root:
 
 ```bash
-data/electricity.csv
+mkdir -p code/dataset
+gunzip -c data/electricity.csv.gz > code/dataset/electricity.csv
 ```
 
-The dataset file itself is excluded from the GitHub repository because of its large size.
+If the compressed file is not included, download `electricity.csv` from the standard Autoformer/PatchTST benchmark dataset release and place it at `code/dataset/electricity.csv`.
 
-## Suggested `.gitignore` entry
-
-To avoid accidentally committing large dataset files, add the following lines to the top-level `.gitignore` file:
-
-```gitignore
-data/electricity.csv
-data/*.csv
-```
+The uncompressed CSV is ignored by Git to avoid committing large local data copies.
