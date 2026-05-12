@@ -1,0 +1,60 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and local environment variables
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Jupyter / Colab checkpoints
+.ipynb_checkpoints/
+
+# Experiment artifacts and logs
+results/runs/
+experiment_artifacts/
+runs/
+logs/
+wandb/
+*.log
+
+# Model checkpoints and large generated outputs
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npz
+*.npy
+
+# Optional uncompressed/local data. The compressed benchmark file below is intentionally tracked.
+data/electricity.csv
+dataset/
+datasets/
+!data/electricity.csv.gz
+!data/README.md
+
+# LaTeX build products
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
